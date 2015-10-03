@@ -4,7 +4,7 @@
 class Connection{
 	
 	CURL *curl;
-	CURLcode response;
+	std::string response;
 	curl_slist *headers;
 public:
 	enum RequestType{
@@ -13,6 +13,7 @@ public:
 	};
 	Connection();
 	CURLcode request(std::string url, RequestType reqType, std::string data);
+	//size_t write_callback(const char *ptr, size_t size, size_t nmemb, std::string *stream);
 
 	
 	

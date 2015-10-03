@@ -28,12 +28,3 @@ CURL_EXTERN CURLcode Cursor::Execute(){
 	return response;
 	
 }
-#include <iostream>
-int main(){
-	Cursor cur;
-	cur.AddCommand("match(n) return(n)");
-	cur.AddCommand("creat(a:adam)");
-	std::cout << cur.Execute();
-	
-		
-}

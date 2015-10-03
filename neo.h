@@ -7,7 +7,7 @@ class Cursor{
 public:
 	Cursor();
 	void AddCommand(std::string command);
-	CURL_EXTERN CURLcode Execute();
+	CURLcode Execute();
 	
 	
 };
